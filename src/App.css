@@ -1,0 +1,128 @@
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+
+  /* Neutral */
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Ubuntu-Regular', sans-serif;
+}
+
+.bold {
+  font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+.medium {
+  font-family: 'Ubuntu-Medium', sans-serif;
+}
+
+body {
+  background: var(--light-blue);
+}
+
+.view {
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 80vh;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  overflow: hidden;
+}
+
+.sidebar {
+  margin: 15px;
+  background-image: url('../assets/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  height: calc(100% - 30px);
+}
+
+.main {
+  /* background-color: red; */
+}
+
+.typography-step {
+  color: #8987f2;
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+
+  margin: 0px;
+}
+
+.typography-step-name {
+  color: var(--white);
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+h1 {
+  color: #032858;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h4 {
+  color: #b4b5ba;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
